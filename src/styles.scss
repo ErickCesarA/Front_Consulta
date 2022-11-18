@@ -1,0 +1,72 @@
+:root {
+    --primary: #1c202c;
+    --bg: #728aca;
+    --lt: rgb(202, 202, 202);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+  }
+  
+  html {
+    @media (max-width: 1080px) {
+      font-size: 93.75%;
+    }
+  
+    @media (max-width: 720px) {
+      font-size: 87.5%;
+    }
+  }
+  
+  body {
+    background: url(https://images.mid-day.com/images/images/2022/apr/Pills-a_d.jpg);
+    --webkit-font-smoothing: antialiased;
+  }
+  
+  body, input, textarea {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+  }
+  
+  h1, h2, h3, h4, h5, h6, button {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  [disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .btn-primary {
+    background: var(--primary);
+    border: none;
+    color: var(--lt);
+    padding: 30px 100px;
+    text-transform: uppercase;
+    transition: all .2s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  
+  .btn-outlined {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: all .2s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  
+  
+  

@@ -1,0 +1,20 @@
+.header 
+  {
+    background: var(--primary);
+    padding: 40px 20px;
+
+.btn-main 
+  {
+    background: var(--primary);
+    border: none;
+    color: var(--lt);
+    text-transform: uppercase;
+    transition: all .2s;
+    &:hover 
+    {
+      opacity: 0.5;
+    }
+  }
+}
+    
+  
