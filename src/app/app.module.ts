@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +10,7 @@ import { HomeComponent } from './layout/home/home.component';
 import { CreatAccountComponent } from './layout/creat-account/creat-account.component';
 import { LoginComponent } from './layout/login/login.component';
 import { MainComponent } from './layout/main/main.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { MainComponent } from './layout/main/main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

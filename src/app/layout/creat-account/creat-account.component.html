@@ -1,1 +1,39 @@
-<p>creat-account works!</p>
+<div class="container">
+    <h1>Novo Usuário</h1>
+    <form [formGroup]="patientForm" (ngSubmit)="savePatient()">
+      <div class="campo">
+        <label for="id">Id</label>
+        <input type="text" id="id" formControlName="id">
+      </div>
+      <div class="campo">
+        <label for="name">Nome</label>
+        <input type="text" id="name" formControlName="name">
+      </div>
+      <div class="campo">
+        <label for="age">Idade</label>
+        <input type="text" id="age" formControlName="age">
+      </div>
+      <div class="campo">
+        <label for="sex">Sexo</label>
+        <input type="text" id="sex" formControlName="sex">
+      </div>
+      <div class="checkboxes">
+        <div class="checkbox">
+          <input type="checkbox" id="pregnant" formControlName="pregnant" />
+          <label for="pregnant">Gestante</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="comorbidity" formControlName="comorbidity" />
+            <label for="comorbidity">Comorbidade</label>
+          </div>
+        <div class="checkbox">
+          <input type="checkbox" id="drugAllergy" formControlName="drugAllergy" />
+          <label for="drugAllergy">Alergias a medicamento</label>
+        </div>
+      </div>
+      <div class="acoes">
+        <button type="submit" class="btn-primary">Salvar</button>
+      </div>
+    </form>
+  </div>
+  
